@@ -5,8 +5,8 @@ title: "Welcome to My Portfolio"
 
 ## Hello and Welcome!
 
-I'm [Your Name], and this is my portfolio. Here you'll find 
-projects showcasing my skills in:
+We are Brayden Leeb (666585781) and Anna Pendergast (665056701), and this is our portfolio. Here you'll find 
+projects showcasing our skills in:
 
 - Data cleaning and transformation
 - Statistical analysis
