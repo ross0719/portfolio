@@ -26,7 +26,7 @@ Throughout this portfolio, you'll see analyses covering:
 Use the menu above to:
 
 - Learn more [about me](about.html)
-- View my [projects](projects.html)
+- View my [projects](project1.html)
 
 ---
 
