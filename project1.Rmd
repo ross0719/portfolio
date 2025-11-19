@@ -1,0 +1,139 @@
+---
+title: "Test 1"
+author: "Brayden Leeb -- 666585781"
+output: html_document
+date: "2025-09-08"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## Executive Summary 
+
+This analysis looked at the connection between user engagement and website performance using a dataset based on air quality data. After fixing missing values and creating visuals, a clear positive trend was found with a correlation of 0.698303. This shows a fairly strong relationship, meaning higher engagement usually leads to better website performance. These findings can help guide e-business management.
+
+
+
+## Question: 1
+
+Create the dataset.
+
+```{r}
+# Create website performance dataset with business terminology
+webperfo <- data.frame(
+  engagement = airquality$Temp,
+  performance = airquality$Ozone,
+  server_load = airquality$Wind
+)
+```
+
+
+### Q1. A
+I see three columns of data and the names of them are engagement performance server_load. I find it useful as it shows a short but useful amount of data without over complicating the data.
+```{r}
+
+head (webperfo)
+```
+
+
+### Q1 B
+The variable that has missing values would be performance noted as 37 sets. This summary tells me the engagement scores are gradually increasing from minimum of 56 to maximum of 97.
+```{r}
+summary(webperfo)
+```
+
+### Q1 C
+
+This can be useful because you can use the 153 days of website data to look back and compare to current data and make improvements if needed.
+```{r}
+
+nrow(webperfo)
+
+
+```
+
+### Q1 D
+
+This 97 max score of engagement appears to be higher than my median enagement score of 79 in this situation.
+```{r}
+max(webperfo$engagement)
+
+```
+
+### Q1 E
+
+We include na.rm = TRUE to remove any NA values that appear in the performance category. This allows us to accurately determine the best overall website performance score, rather than simply identifying the highest engagement score. 
+```{r}
+
+max(webperfo$performance, na.rm = TRUE)
+
+```
+
+
+## Question 2
+
+### Q2 A
+
+This plot is difficult to understand for a business presentation because one, there is no lines where the points are located as well as some points overlapping each other.
+```{r}
+plot(webperfo$engagement, webperfo$performance)
+
+
+
+
+```
+
+### Q2 B
+
+This is more useful for a business audience because it appears there are proper titles on the y and x axis, as well as the very top identifying what the graph is showing you. 
+```{r}
+plot(x = webperfo$engagement, y = webperfo$performance,
+     main = "User Engagement vs Website Performance",
+     xlab = "Daily User Engagement Score", 
+     ylab = "Website Performance Score")
+  
+```
+
+### Q2 C
+
+The visual pattern seen here is that the engagement is higher awhich means its linked to better performance. In business terms, the more users interact with the website, the better the overall results. 
+```{r}
+plot(x = webperfo$engagement, y = webperfo$performance,
+     main = "User Engagement vs Website Performance",
+     xlab = "Daily User Engagement Score", 
+     ylab = "Website Performance Score",
+     pch = 16, col = "blue")
+```
+
+
+### Q2 D
+
+It appears that the red trend line is increasing at a consistent rate for the daily user engagement score. This red line tells me that higher engagement is generally linked to higher performance. 
+```{r}
+plot(x = webperfo$engagement, y = webperfo$performance,
+     main = "User Engagement vs Website Performance",
+     xlab = "Daily User Engagement Score", 
+     ylab = "Website Performance Score",
+     pch = 16, col = "blue")
+
+    abline(lm(performance ~ engagement, data = webperfo), 
+       col = "red", lwd = 2)
+```
+
+## Question: 3 
+
+### Q3 A
+
+The correlation coefficient is a 0.6983603. This is a moderate correlation coefficient as it is between (0.3-0.7).
+```{r}
+
+cor(webperfo$engagement, webperfo$performance, use = "complete.obs")
+
+```
+
+### Q3 B
+
+A correlation of 0.6983603 shows a strong positive relationship between engagement and website performance. When engagement increases, site performance typically improves. This suggests that boosting engagement can directly enhance performance. An e-business manager should focus on strategies that drive engagement. 
+
+
+  
