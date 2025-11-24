@@ -37,7 +37,7 @@ in data analysis, business intelligence, and statistical computing.
 ## Education
 
 **VIU** - E-Management Program  
-*Expected Graduation: 2027*
+*Expected Graduation: [2027]*
 
 Relevant Coursework:
 
@@ -49,7 +49,7 @@ Relevant Coursework:
 
 Feel free to connect with me:
 
-- Email: brayden.leeb@my.viu.ca, anna.pendergast@my.viu.ca
+- Email: [brayden.leeb@my.viu.ca], [anna.pendergast@my.viu.ca]
 - GitHub: [ross0719](https://github.com/ross0719)
 
 ---
