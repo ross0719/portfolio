@@ -11,7 +11,7 @@ title: "About Me"
 
 ## Background
 
-I'm a second-year student at VIU, developing skills 
+We are second-year students at VIU, developing skills 
 in data analysis, business intelligence, and statistical computing.
 
 ## Skills & Tools
@@ -49,9 +49,8 @@ Relevant Coursework:
 
 Feel free to connect with me:
 
-- Email: [your.email@example.com](mailto:your.email@example.com)
-- LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
-- GitHub: [yourusername](https://github.com/yourusername)
+- Email: [brayden.leeb@my.viu.ca],[anna.pendergast@my.viu.ca]
+- GitHub: [ross0719](https://github.com/ross0719)
 
 ---
 
